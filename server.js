@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const uuid = require('uuid');
 
 const app = express();
 let nextId = 7;
@@ -11,37 +12,37 @@ function getNewId() {
 
 let friends = [
   {
-    id: 1,
+    id: uuid.v4(),
     name: 'Ben',
     age: 30,
     email: 'ben@lambdaschool.com',
   },
   {
-    id: 2,
+    id: uuid.v4(),
     name: 'Austen',
     age: 32,
     email: 'austen@lambdaschool.com',
   },
   {
-    id: 3,
+    id: uuid.v4(),
     name: 'Ryan',
     age: 35,
     email: 'ryan@lambdaschool.com',
   },
   {
-    id: 4,
+    id: uuid.v4(),
     name: 'Sean',
     age: 35,
     email: 'sean@lambdaschool.com',
   },
   {
-    id: 5,
+    id: uuid.v4(),
     name: 'Michelle',
     age: 67,
     email: 'michelle@gmail.com',
   },
   {
-    id: 6,
+    id: uuid.v4(),
     name: 'Luis',
     age: 47,
     email: 'luis@lambdaschool.com',
