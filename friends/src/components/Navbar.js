@@ -14,9 +14,7 @@ const NavHeader = styled.h1`
   margin: 0;
 `;
 
-const NavLinks = styled.div`
-
-`;
+const NavLinks = styled.div``;
 
 const StyledLink = styled(NavLink)`
   text-decoration: none;
