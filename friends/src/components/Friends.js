@@ -13,7 +13,11 @@ const Friends = props => {
     return (
         <FriendsContainer>
             {props.friends.map(friend => (
-                <Friend key={friend.id} friend={friend} />
+                <Friend 
+                    key={friend.id} 
+                    friend={friend} 
+                    setUpdateForm={props.setUpdateForm}
+                />
             ))}
         </FriendsContainer>
     )
